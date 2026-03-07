@@ -1,7 +1,8 @@
 # SOME
 SOME: Singing-Oriented MIDI Extractor.
 
-<font color='red'>**News: The next-generation midi extractor is released! See [GAME: Generative Adaptive MIDI Extractor](https://github.com/openvpi/GAME)**</font>
+> [!IMPORTANT]
+>  The next-generation midi extractor is released! See [GAME: Generative Adaptive MIDI Extractor](https://github.com/openvpi/GAME).
 
 ## Overview
 
