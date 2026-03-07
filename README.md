@@ -1,9 +1,7 @@
 # SOME
 SOME: Singing-Oriented MIDI Extractor.
 
-> WARNING
->
-> This project is under beta version now. No backward compatibility is guaranteed.
+**News: The next-generation midi extractor is released! See [openvpi/GAME: Generative Adaptive MIDI Extractor](https://github.com/openvpi/GAME)**
 
 ## Overview
 
