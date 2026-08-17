@@ -14,7 +14,7 @@ class RMVPE:
     def __init__(self, model_path, hop_length=160, device=None):
         self.resample_kernel = {}
         if device is None:
-            self.device = 'cuda' if torch.cuda.is_available() else 'cpu'
+            self.device = 'mps' if torch.cuda.is_available() else 'cpu'
         else:
             self.device = device
         self.model = E2E0(4, 1, (2, 2)).eval().to(self.device)

@@ -44,7 +44,7 @@ class BaseBinarizer:
         self.data_attrs = [] if data_attrs is None else data_attrs
 
         self.binarization_args = self.config['binarization_args']
-        self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+        self.device = torch.device('mps' if torch.cuda.is_available() else 'cpu')
 
         self.items = {}
         self.item_names: list = None

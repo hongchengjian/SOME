@@ -13,7 +13,7 @@ from utils import build_object_from_class_name
 class BaseInference:
     def __init__(self, config: dict, model_path: pathlib.Path, device=None):
         if device is None:
-            device = 'cuda' if torch.cuda.is_available() else 'cpu'
+            device = 'mps' if torch.cuda.is_available() else 'cpu'
         self.config = config
         self.model_path = model_path
         self.device = device

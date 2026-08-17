@@ -12,7 +12,7 @@ class BaseONNXModule(nn.Module):
     def __init__(self, config: dict, model_path: pathlib.Path, device=None):
         super().__init__()
         if device is None:
-            device = 'cuda' if torch.cuda.is_available() else 'cpu'
+            device = 'mps' if torch.cuda.is_available() else 'cpu'
         self.config = config
         self.model_path = model_path
         self.device = device
